@@ -8,7 +8,7 @@ function Home() {
   const [foodItem,setFoodItem]=useState([])
   const [search,setSearch]=useState("")
   const loadData=async ()=>{
-    let response=await fetch("${process.env.API_URL}/api/foodData",{
+    let response=await fetch(`${process.env.API_URL}/api/foodData`,{
       method:"POST",
       headers:{
         'Content-Type':'application/json'
