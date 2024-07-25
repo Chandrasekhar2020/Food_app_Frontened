@@ -2,7 +2,7 @@ import React ,{useState,useEffect} from "react";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
-import Carousal from "../components/Carousal";
+
 function Home() {
   const [foodCat,setFoodCat]=useState([])
   const [foodItem,setFoodItem]=useState([])
@@ -28,34 +28,34 @@ function Home() {
         <Navbar />
       </div>
       <div>
-      <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel" style={{objectFit:"contain !important" }}>
+      <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel" style={{ objectFit: "contain !important" }}>
   <div className="carousel-inner" id='carousel'>
-    <div className="carousel-caption" style={{zIndex:"10"}}>
-    <div className="d-flex justify-content-center">
-      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e)=>{setSearch(e.target.value)}}/>
-      {/* <button className="btn btn-outline-success text-white bg-success" type="submit">Search</button> */}
-    </div>
-
+    <div className="carousel-caption" style={{ zIndex: "10" }}>
+      <div className="d-flex justify-content-center">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
+        <button className="btn btn-outline-success text-white bg-success" type="submit">Search</button>
+      </div>
     </div>
     <div className="carousel-item active">
-      <img src="https://source.unsplash.com/random/300x300/?burger" className="d-block w-100" style={{filter:"brightness(30%"}} alt="..."/>
+      <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" className="d-block w-100" style={{ filter: "brightness(30%)" }} alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="https://source.unsplash.com/random/300x300/?momos" className="d-block w-100" style={{filter:"brightness(30%"}} alt="..."/>
+      <img src="https://imagevars.gulfnews.com/2023/05/01/Tandoori-chicken_187d79b132b_large.jpg" className="d-block w-100" style={{ filter: "brightness(30%)" }} alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="https://source.unsplash.com/random/300x300/?sea" className="d-block w-100" style={{filter:"brightness(30%"}} alt="..."/>
+      <img src="https://media.istockphoto.com/id/1345624336/photo/chicken-biriyani.jpg?s=612x612&w=0&k=20&c=adU_N0P-1SKMQLZu5yu7aPknfLLgbViI8XILqLP92A4=" className="d-block w-100" style={{ filter: "brightness(30%)" }} alt="..." />
     </div>
   </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
   </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
 </div>
+
       </div>
      <div className="container">
         {
@@ -83,3 +83,5 @@ function Home() {
 }
 
 export default Home;
+
+
