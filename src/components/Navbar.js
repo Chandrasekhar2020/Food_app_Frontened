@@ -10,7 +10,7 @@ function Navbar() {
   const [cartview,setCartView]=useState(false)
   const handleLogout=()=>{
     localStorage.removeItem("authToken")
-    navigate('/login')
+    navigate('/')
   }
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-success">
