@@ -12,7 +12,7 @@ function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('https://food-app-backened.onrender.com/api/createuser', {
+    const response = await fetch('${process.env.API_URL}/api/createuser', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
