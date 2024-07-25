@@ -3,12 +3,13 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 
+
 function Home() {
   const [foodCat,setFoodCat]=useState([])
   const [foodItem,setFoodItem]=useState([])
   const [search,setSearch]=useState("")
   const loadData=async ()=>{
-    let response=await fetch(`${process.env.API_URL}/api/foodData`,{
+    let response=await fetch(`${process.env.REACT_APP_API_URL}api/foodData`,{
       method:"POST",
       headers:{
         'Content-Type':'application/json'

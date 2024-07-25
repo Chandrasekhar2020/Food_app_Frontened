@@ -7,7 +7,7 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${process.env.API_URL}/api/loginuser`, {
+    const response = await fetch(`${process.env.REACT_APP_API_URL}api/loginuser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
