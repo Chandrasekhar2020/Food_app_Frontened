@@ -40,7 +40,7 @@ export default function Cart() {
       </style>
 
       {data.length === 0 ? (
-        <div className='m-5 w-100 text-center fs-3'>The Cart is Empty!</div>
+       <div className='m-5 w-100 text-center fs-3 text-white'>The Cart is Empty!</div>
       ) : (
         <div className='container m-auto mt-5 table-responsive table-responsive-sm table-responsive-md'>
           <table className='table '>
