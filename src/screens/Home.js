@@ -60,7 +60,7 @@ function Home() {
       </div>
      <div className="container">
         {
-            foodCat.length ?foodCat.map((data)=>{
+            (foodCat && foodCat.length) ?foodCat.map((data)=>{
               return (<div className="row mb-3">
                 <div key={data._id} className="fs-3 m-3">{data.CategoryName} </div>
                 <hr/>
