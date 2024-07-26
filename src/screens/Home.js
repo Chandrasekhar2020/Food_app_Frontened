@@ -72,7 +72,7 @@ function Home() {
                   }):<div>"No items"</div>
                 }
               </div>)
-            }):<div>"hell"</div>
+            }):<div>"loading"</div>
         }
        
      </div>

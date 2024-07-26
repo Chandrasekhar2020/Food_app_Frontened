@@ -109,9 +109,9 @@ export default function MyOrder() {
                           );
                         });
                       })
-                  : "first";
+                  : "No items";
               })
-            : "second"}
+            : "loading"}
         </div>
       </div>
 
